@@ -3,10 +3,7 @@ package com.delricco.vince.autovalueexamples;
 import com.google.auto.value.AutoValue;
 
 @AutoValue
-public abstract class Fox {
-    abstract String getName();
-    abstract int getWeight();
-
+public abstract class Fox extends AbstractAnimal {
     static Builder builder() {
         return new AutoValue_Fox.Builder().name("None").weight(0);
     }

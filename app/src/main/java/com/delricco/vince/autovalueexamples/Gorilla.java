@@ -3,10 +3,7 @@ package com.delricco.vince.autovalueexamples;
 import com.google.auto.value.AutoValue;
 
 @AutoValue
-public abstract class Gorilla {
-    abstract String getName();
-    abstract int getWeight();
-
+public abstract class Gorilla extends AbstractAnimal {
     static Builder builder() {
         return new AutoValue_Gorilla.Builder();
     }

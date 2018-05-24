@@ -3,10 +3,7 @@ package com.delricco.vince.autovalueexamples;
 import com.google.auto.value.AutoValue;
 
 @AutoValue
-public abstract class Elk {
-    abstract String getName();
-    abstract int getWeight();
-
+public abstract class Elk extends AbstractAnimal {
     static Builder builder() {
         return new AutoValue_Elk.Builder().name("None");
     }

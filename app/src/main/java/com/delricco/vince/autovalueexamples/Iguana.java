@@ -4,9 +4,7 @@ import com.google.auto.value.AutoValue;
 import com.google.common.collect.ImmutableSet;
 
 @AutoValue
-public abstract class Iguana {
-    abstract String getName();
-    abstract int getWeight();
+public abstract class Iguana extends AbstractAnimal {
     abstract ImmutableSet<String> getFavoriteFoods();
 
     static Builder builder() {
